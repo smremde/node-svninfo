@@ -21,49 +21,5 @@
     "node": ">=0.5.0"
   },
   "main": "index",
-  "readme": "A NodeJS module which will execute and parse the output of an svn info command.
-
-Example:
-
-```javascript
-var svninfo = require('svninfo');
-
-svninfo(function (err, res) {
-  if (err)
-    console.log(err);  
-  else
-    console.log(res);
-});
-```
-
-Output
-
-```
-{ rev: '230',
-  url: 'https://example.com/svn/test/tree',
-  last:
-   { rev: '230',
-     author: 'Steve',
-     date: Tue Jun 18 2013 15:12:10 GMT+0100 (BST) },
-  repository:
-   { root: 'https://example.com/svn/test',
-     id: 'bee123213-cddd-1234-abcd-12342323134' } }
-```
-
-Alternate syntax:
-
-```javascript
-var svninfo = require('svninfo');
-
-svninfo(callback);
-svninfo(path, callback);
-svninfo(options, callback);
-
-var options = { 
-  cwd: 'path',
-  timeout: 10
-}
-  
-
-```"
+  "readme": "A NodeJS module which will execute and parse the output of an svn info command.\n\nExample:\n```javascript\nvar svninfo = require('svninfo');\n\nsvninfo(function (err, res) {\n  if (err)\n\n    console.log(err);  \n  else\n    console.log(res);\n});\n```\n\nOutput\n\n```\n{ rev: '230',\n  url: 'https://example.com/svn/test/tree',\n  last:\n   { rev: '230',\n     author: 'Steve',\n     date: Tue Jun 18 2013 15:12:10 GMT+0100 (BST) },\n  repository:\n   { root: 'https://example.com/svn/test',\n     id: 'bee123213-cddd-1234-abcd-12342323134' } }\n```\n\nAlternate syntax:\n\n```javascript\nvar svninfo = require('svninfo');\n\nsvninfo(callback);\nsvninfo(path, callback);\nsvninfo(options, callback);\n\nvar options = { \n  cwd: 'path',\n  timeout: 10\n}\n```"
 }

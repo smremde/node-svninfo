@@ -1,0 +1,25 @@
+{
+  "name": "svninfo",
+  "version": "0.0.1",
+  "description": "A parser for svn info",
+  "keywords": [
+    "svn", "info", "svninfo"
+  ],
+  "author": {
+    "name": "Stephen Remde",
+    "email": "smremde@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/smremde/node-svninfo.git"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": ">=0.5.0"
+  },
+  "main": "index",
+  "readme": ""
+}
